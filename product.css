@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eaecef;
+    font-family: Lato, Tahoma, sans-serif;
+    position: relative;
+}
+
+#header {
+    width: 100%;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 900;
+    background-color: #eaecef;
+}
+
+#logo {
+    width: 60%;
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    margin-left: 25px;
+}
+
+#nav-bar {
+    width: 40%;
+    margin-right: 10px;
+}
+
+#nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-bar ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 85px 15px 15px;
+}
+
+#form {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#email {
+    padding: 5px;
+    width: 260px;
+}
+
+#submit {
+    background-color: #fccb3a;
+    border: none;
+    outline-color: #e59006;
+    padding: 3px 7px;
+    margin: 15px;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+#submit:hover {
+    background-color: #fca923;
+}
+
+#features {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.features-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.icon {
+    width: 21%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-description {
+    width: 79%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fas {
+    color: #fca923;
+    font-size: 3em;
+}
+
+.fa-truck {
+    transform: scale(-1, 1);
+}
+
+#how-it-works {
+    text-align: center;
+    margin: 80px 0 70px 0;
+}
+
+#video {
+    width: 100%;
+    height: 315px;
+    max-width: 560px;
+}
+
+#pricing {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px 0 10px;
+}
+
+.pricing-offer {
+    width: calc(100% / 3);
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.pricing-offer:not(:last-child) {
+    margin-right: 20px;
+}
+
+.offer-caption {
+    text-align: center;
+    background-color: #ddd;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.offer-content {
+    text-align: center;
+}
+
+.offer-content > h3 {
+    font-size: 1.5em;
+    padding: 15px 0 15px 0;
+}
+
+.offer-content > p {
+    line-height: 1.9;
+    white-space: pre-line;
+}
+
+.pricing-button {
+    background-color: #fccb3a;
+    border: none;
+    border-radius: 3px;
+    outline-color: #e59006;
+    padding: 10px 20px;
+    margin: 25px 0 15px 0;
+    text-transform: uppercase;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.pricing-button:hover {
+    background-color: #fca923;
+}
+
+#footer {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    background-color: #ddd;
+    padding: 20px 20px;
+    text-align: right;
+}
+
+#footer-nav {
+    list-style: none;
+}
+
+#footer-nav > li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#footer-nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+#copyright {
+    color: #444;
+    font-size: 0.9em;
+    margin: 5px 0 0;
+}
+
+@media screen and (max-width: 800px) {
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-offer {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .pricing-offer:not(:last-child) {
+        margin: 0 0 10px 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #header-img {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nav-bar > ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #nav-bar {
+        width: 100%;
+        margin: 15px 0 15px;
+    }
+
+    h1 {
+        margin-top: 140px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #form {
+        margin-bottom: 50px;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .features-description {
+        width: 100%;
+        text-align: center;
+    }
+}
+
